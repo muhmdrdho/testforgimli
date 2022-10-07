@@ -1,0 +1,9 @@
+name: pg
+channels:
+  - conda-forge
+  - gimli
+  - defaults
+dependencies:
+- pygimli=1.3.0=py_0
+- matplotlib=3.5.1=py39h06a4308_1
+- streamlit=1.13.0=pyhd8ed1ab_1
