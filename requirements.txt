@@ -1,0 +1,5 @@
+pygimli=1.3.0=py_0
+pgcore=1.3.0=np120py39h3fd9d12_0
+matplotlib=3.5.1=py39h06a4308_1
+matplotlib-base=3.5.1=py39ha18d171_1
+matplotlib-inline=0.1.6=py39h06a4308_0
