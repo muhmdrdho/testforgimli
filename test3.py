@@ -1,4 +1,4 @@
-import pygimli as pg
+import pygimli 
 import streamlit as st
 from pygimli.physics import ert 
 import matplotlib.pyplot as plt 
@@ -53,12 +53,12 @@ if uploaded_file is not None:
     ###############################################################################
     # Or just plot the model only using your own options.
 
-    meshPD = pg.Mesh(mgr.paraDomain)
+    meshPD = pygimli.Mesh(mgr.paraDomain)
     modelPD = mgr.paraModel(mod)
-    pg.show(mgr.paraDomain, modelPD, label='Model', cMap='Spectral_r', logScale=True, cMin=5, cMax=4000)
+    pygimli.show(mgr.paraDomain, modelPD, label='Model', cMap='Spectral_r', logScale=True, cMin=5, cMax=4000)
     fig, ax1 = plt.subplots(1,1)
 
-    pg.show(meshPD, mod, ax=ax1, hold=True, cMap="Spectral_r", logScale=True, orientation="horizontal", cMin=5, cMax=4000)
+    pygimli.show(meshPD, mod, ax=ax1, hold=True, cMap="Spectral_r", logScale=True, orientation="horizontal", cMin=5, cMax=4000)
     labels = ["True model"]
     for ax, label in zip([ax1], labels):
         ax.set_xlim(mgr.paraDomain.xmin(), mgr.paraDomain.xmax())
