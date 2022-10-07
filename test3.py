@@ -1,6 +1,4 @@
 import pygimli as pg
-import pandas as pd
-import numpy as np
 import streamlit as st
 from pygimli.physics import ert 
 import matplotlib.pyplot as plt 
