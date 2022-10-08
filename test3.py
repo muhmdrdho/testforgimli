@@ -1,4 +1,5 @@
 import pygimli 
+from pygimli.core.decorators import renamed, singleton, moduleProperty
 import streamlit as st
 from pygimli.physics import ert 
 import matplotlib.pyplot as plt 
