@@ -1,9 +1,9 @@
 import pygimli as pg
-import pandas as pd
-import numpy as np
+import mpld3
 import streamlit as st
 from pygimli.physics import ert 
 import matplotlib.pyplot as plt 
+import streamlit.components.v1 as components 
 
 uploaded_file = st.file_uploader('choose')
 if uploaded_file is not None:
@@ -66,4 +66,8 @@ if uploaded_file is not None:
         ax.set_xlim(mgr.paraDomain.xmin(), mgr.paraDomain.xmax())
         ax.set_ylim(mgr.paraDomain.ymin(), mgr.paraDomain.ymax())
         ax.set_title(label)
-    st.pyplot(fig)
+
+    fig_html = mpld3.fig_to_html(fig)
+    components.html(fig_html, height=600)
+    
+    
