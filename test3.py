@@ -3,6 +3,8 @@
 import mpld3
 import streamlit as st
 from pygimli.physics import ert 
+from .core.decorators import renamed, singleton, moduleProperty
+pgcore.RVector.__repr__ =__RVector_str
 
 import matplotlib.pyplot as plt 
 import streamlit.components.v1 as components 
