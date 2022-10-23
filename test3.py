@@ -67,7 +67,7 @@ if uploaded_file is not None:
         ax.set_ylim(mgr.paraDomain.ymin(), mgr.paraDomain.ymax())
         ax.set_title(label)
 
-    fig_html = mpld3.fig_to_html(fig)
-    components.html(fig_html, height=600)
+    st.pyplot(fig)
+
     
     
