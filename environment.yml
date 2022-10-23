@@ -194,7 +194,6 @@ dependencies:
   - parso=0.8.3=pyhd3eb1b0_0
   - pcre2=10.37=hc3806b6_1
   - pexpect=4.8.0=pyhd3eb1b0_3
-  - pgcore=1.3.0=np120py39h3fd9d12_0
   - pickleshare=0.7.5=pyhd3eb1b0_1003
   - pillow=9.2.0=py39hd5dbb17_2
   - pip=22.2.2=py39h06a4308_0
