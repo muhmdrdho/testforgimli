@@ -1,9 +1,9 @@
 
-from pygimli import *
+from pygimli import pygimli
 import mpld3
 import streamlit as st
 from pygimli.physics import ert 
-from pgcore import RVector
+from pygimli.core import 
 import matplotlib.pyplot as plt 
 import streamlit.components.v1 as components 
 
