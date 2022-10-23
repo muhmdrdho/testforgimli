@@ -1,5 +1,5 @@
 
-from pygimli import pygimli
+
 import mpld3
 import streamlit as st
 from pygimli.physics import ert 
